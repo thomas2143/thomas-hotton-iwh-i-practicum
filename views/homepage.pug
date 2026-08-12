@@ -1,0 +1,20 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Mes Chatons
+    a(href='/update-cobj') Ajouter un chaton
+    table
+      thead
+        tr
+          th Nom
+          th Race
+          th Couleur
+      tbody
+        each chaton in data
+          tr
+            td= chaton.properties.name
+            td= chaton.properties.breed
+            td= chaton.properties.color

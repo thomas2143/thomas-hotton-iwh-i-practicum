@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Ajouter un Chaton
+    form(action='/update-cobj', method='POST')
+      label(for='name') Nom
+      input(type='text', name='name', id='name', required)
+      br
+      label(for='breed') Race
+      input(type='text', name='breed', id='breed')
+      br
+      label(for='color') Couleur
+      input(type='text', name='color', id='color')
+      br
+      button(type='submit') Créer
+    br
+    a(href='/') Retour à l'accueil
+    
